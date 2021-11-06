@@ -24,6 +24,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { MenuComponent } from './menu/menu.component';
+import { NzFormModule } from 'ng-zorro-antd/form';
 
 registerLocaleData(pt);
 
@@ -53,7 +54,8 @@ registerLocaleData(pt);
     NzButtonModule,
     NzAvatarModule,
     NzIconModule,
-    LoginModule
+    LoginModule,
+    NzFormModule
   ],
   providers: [{ provide: NZ_I18N, useValue: pt_BR }],
   bootstrap: [AppComponent]

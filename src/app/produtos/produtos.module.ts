@@ -1,48 +1,49 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UsuariosComponent } from './pages/usuarios/usuarios.component';
-import { UsersRoutingModule } from './usuarios-routing.module';
+
+import { ProdutosRoutingModule } from './produtos-routing.module';
+import { ProdutosComponent } from './pages/produtos/produtos.component';
+import { CadProdutosComponent } from './pages/cad-produtos/cad-produtos.component';
+
+import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzGridModule } from 'ng-zorro-antd/grid';
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzModalModule } from 'ng-zorro-antd/modal';
-import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzPaginationModule } from 'ng-zorro-antd/pagination';
 import { NzIconModule } from 'ng-zorro-antd/icon';
-import { NovoUsuarioComponent } from './pages/novo-usuario/novo-usuario.component';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzImageModule } from 'ng-zorro-antd/image';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 
 @NgModule({
+  declarations: [
+    ProdutosComponent,
+    CadProdutosComponent
+  ],
   imports: [
     CommonModule,
+    ProdutosRoutingModule,
     NzPageHeaderModule,
-    NzLayoutModule,
-    UsersRoutingModule,
+    NzLayoutModule,    
     FormsModule,
     ReactiveFormsModule,
     NzFormModule,
     NzCheckboxModule,
     NzInputModule,
     NzButtonModule,
-    NzGridModule,
-    NzModalModule,
-    NzSpinModule,
+    NzGridModule,       
     NzTableModule,
     NzPaginationModule,
     NzIconModule,
+    NzSpinModule,
     NzImageModule,
     NzSelectModule
-  ],
-  declarations: [
-    UsuariosComponent,
-    NovoUsuarioComponent
-  ]  
+  ]
 })
-export class UsersModule { }
+export class ProdutosModule { }

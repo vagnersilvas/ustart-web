@@ -1,9 +1,9 @@
-<nz-layout class="app-layout">
+<nz-layout class="app-layout" nz-demo-layout-basic>
   
   <nz-sider *ngIf="isLoggedIn" class="menu-sidebar" nzCollapsible nzWidth="256px" nzBreakpoint="md"
     [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
     <div class="sidebar-logo">
-      <a href="https://www.google.com.br/" target="_blank">
+      <a href="#" target="_blank">
         <img [ngClass]="{'small': isCollapsed}" src="assets/logo.png" alt="logo">
       </a>
     </div>

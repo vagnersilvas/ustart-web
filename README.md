@@ -32,15 +32,15 @@ https://angular.io/cli/generate
 ## Criar um módigo
 ```
 Module
-npx ng g module grupos --routing
+npx ng g module cliente --routing
 
 ```
 
 ## Criar um componente
 ```
 Component
-npx ng g c grupos/pages/grupos --module grupos.module --skip-tests
-npx ng g c grupos/pages/cad-grupo --module grupos.module --skip-tests
+npx ng g c cliente/pages/cliente --module cliente.module --skip-tests
+npx ng g c cliente/pages/cad-cliente --module cliente.module --skip-tests
 
 
 ```
