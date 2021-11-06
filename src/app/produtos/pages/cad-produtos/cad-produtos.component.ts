@@ -7,14 +7,14 @@ import { GrupoService } from 'src/app/data-services/grupos.service';
 import { ProdutoService } from 'src/app/data-services/produtos.service';
 import { AssignFormHelper } from 'src/app/helper/AssignFormHelper';
 import { Grupo } from 'src/app/models/grupos/grupo';
-import { Produto } from 'src/app/models/produto/produto';
+import { Produto } from 'src/app/models/produtos/produto';
 
 @Component({
   selector: 'app-cad-produto',
   templateUrl: './cad-produtos.component.html',
   styleUrls: ['./cad-produtos.component.scss']
 })
-export class CadProdutoComponent implements OnInit {
+export class CadProdutosComponent implements OnInit {
 
   private idSelecionado: string;
   public novoRegistro: boolean = false;
@@ -94,7 +94,7 @@ export class CadProdutoComponent implements OnInit {
       this.form.get("descricao").setValue(this.produto.descricao);
       this.form.get("preco").setValue(this.produto.preco);
       this.form.get("urlImagem").setValue(this.produto.urlImagem);
-      this.form.get("codigoExterno").setValue(this.produto.codExterno);
+      this.form.get("codigoExterno").setValue(this.produto.codigoExterno);
 
       this.grupoSelecionado = this.produto.grupoProdutoId;
     }

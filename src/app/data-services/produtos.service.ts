@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { EndpointsService } from '../core/services/endpoints/endpoints.service';
 import { Observable } from 'rxjs';
-import { Produto } from '../models/produto/produto';
+import { Produto } from '../models/produtos/produto';
 
 
 @Injectable({ providedIn: 'root' })

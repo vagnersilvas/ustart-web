@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Produto } from 'src/app/models/produto/produto';
+import { Produto } from 'src/app/models/produtos/produto';
 import { debounce } from 'lodash';
 import { ProdutoService } from 'src/app/data-services/produtos.service';
 import { AppRoutes } from 'src/app/app-routes';

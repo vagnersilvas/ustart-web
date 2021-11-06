@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppRoutes } from 'src/app/app-routes';
+import { Cliente } from 'src/app/models/clientes/cliente';
 
 @Component({
   selector: 'app-clientes',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientesComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor(
+    
+  ) {
+   
+  }
 
   ngOnInit(): void {
   }
 
+  
 }
