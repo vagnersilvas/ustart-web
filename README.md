@@ -1,3 +1,11 @@
+# Aviso
+
+## Projeto inicial
+
+Segue o código fonte do projeto inicial do curso
+https://github.com/silvagpe/ustart-web-inicial
+
+
 # WebclientAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
@@ -34,6 +42,11 @@ https://angular.io/cli/generate
 Module
 npx ng g module cliente --routing
 
+#Produto
+npx ng g module produtos --routing
+
+npx ng g module clientes --routing
+
 ```
 
 ## Criar um componente
@@ -41,6 +54,15 @@ npx ng g module cliente --routing
 Component
 npx ng g c cliente/pages/cliente --module cliente.module --skip-tests
 npx ng g c cliente/pages/cad-cliente --module cliente.module --skip-tests
+
+#Produtos
+npx ng g c produtos/pages/produtos --module produtos.module --skip-tests
+npx ng g c produtos/pages/cad-produto --module produtos.module --skip-tests
+npx ng g c produtos/pages/graficos --module produtos.module --skip-tests
+
+#Clientes
+npx ng g c clientes/pages/clientes --module clientes.module --skip-tests
+npx ng g c clientes/pages/cad-cliente --module clientes.module --skip-tests
 
 
 ```
