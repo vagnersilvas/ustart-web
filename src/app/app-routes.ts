@@ -16,6 +16,6 @@ export const AppRoutes = {
   },
   Cliente: {
     base: () => "clientes",
-    CadProduto: () => { return AppRoutes.Cliente.base() + "/cad-cliente" }    
+    CadCliente: () => { return AppRoutes.Cliente.base() + "/cad-cliente" }    
   },
 };
