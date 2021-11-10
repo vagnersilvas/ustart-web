@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NzModalService } from 'ng-zorro-antd/modal';
-import { ClienteService } from 'src/app/data-services/cliente.service';
+import { ClienteService } from 'src/app/data-services/clientes.service';
 import { Cliente } from 'src/app/models/clientes/cliente';
 import { debounce } from 'lodash';
 import { AppRoutes } from 'src/app/app-routes';
@@ -9,7 +9,7 @@ import { AppRoutes } from 'src/app/app-routes';
 @Component({
   selector: 'app-cliente',
   templateUrl: './clientes.component.html',
-  styleUrls: ['./clientes.component.scss']
+  styleUrls:['./clientes.component.scss']
 })
 export class ClienteComponent implements OnInit {
 

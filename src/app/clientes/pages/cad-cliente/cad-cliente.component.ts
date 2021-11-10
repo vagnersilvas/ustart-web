@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NzModalService } from 'ng-zorro-antd/modal';
 import { AppRoutes } from 'src/app/app-routes';
-import { ClienteService } from 'src/app/data-services/cliente.service';
+import { ClienteService } from 'src/app/data-services/clientes.service';
 import { IbgeService } from 'src/app/data-services/ibge.service';
 import { AssignFormHelper } from 'src/app/helper/AssignFormHelper';
 import { Cliente } from 'src/app/models/clientes/cliente';

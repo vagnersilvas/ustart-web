@@ -1,5 +1,15 @@
 <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed" >
-    <li nz-submenu nzOpen nzTitle="Produtos" nzIcon="sand-box">
+    <li nz-submenu nzTitle="Clientes" nzIcon="user">
+        <ul>
+            <li nz-menu-item nzMatchRouter [nzMatchRouterExact]="true">
+                <a routerLink="/clientes">Consulta</a>
+            </li>
+            <li nz-menu-item nzMatchRouter [nzMatchRouterExact]="true">
+                <a routerLink="/clientes/cad-cliente">Novo cliente</a>
+            </li>
+        </ul>
+    </li>
+    <li nz-submenu nzTitle="Produtos" nzIcon="code-sandbox">
         <ul>
             <li nz-menu-item nzMatchRouter [nzMatchRouterExact]="true">
                 <a routerLink="/produtos">Consulta</a>
@@ -19,7 +29,7 @@
             </li>
         </ul>
     </li>
-    <li nz-submenu nzOpen nzTitle="Usuários" nzIcon="user">
+    <li nz-submenu nzTitle="Usuários" nzIcon="user">
         <ul>
             <li nz-menu-item nzMatchRouter [nzMatchRouterExact]="true">
                 <a routerLink="/usuarios">Consulta</a>
